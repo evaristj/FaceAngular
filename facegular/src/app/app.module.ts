@@ -8,12 +8,14 @@ import { HistorialComponent } from './historial/historial.component';
 import { RouterModule, Routes } from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
 import { BarranavComponent } from './barranav/barranav.component';
+import { MisCosasComponent } from './mis-cosas/mis-cosas.component';
+import { AmigosComponent } from './amigos/amigos.component';
 
 const appRoutes: Routes = [
   { path: 'app', component: AppComponent },
-  { path: 'my-post-component', component: MyPostComponent },
-  { path: 'portada-component', component: PortadaComponent },
-  { path: 'historial-component', component: HistorialComponent },
+  { path: 'principal-component', component: PrincipalComponent },
+  { path: 'mis-cosas-component', component: MisCosasComponent },
+  { path: 'amigos-component', component: AmigosComponent },
   { path: '',
     redirectTo: '/app',
     pathMatch: 'full'
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
     HistorialComponent,
     PrincipalComponent,
     BarranavComponent,
+    MisCosasComponent,
+    AmigosComponent,
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes)
